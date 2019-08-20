@@ -1,4 +1,4 @@
-//META{"name":"FloofTools","website":"https://github.com/Aikufurr/Shortcut","source":"https://github.com/Aikufurr/Shortcut/blob/master/Shortcut.plugin.js"}*//
+//META{"name":"FloofTools","website":"https://github.com/FluffyJenkins/FloofTools-Discord","source":"https://github.com/FluffyJenkins/FloofTools-Discord/blob/master/FloofTools.plugin.js"}*//
 
 
 class FloofTools {
