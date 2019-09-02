@@ -43,9 +43,6 @@ class FloofTools {
 
         this.execSync = require('child_process').execSync;
 
-        this.Entered = false;
-
-
         this.initialized = false;
 
 
@@ -113,7 +110,7 @@ class FloofTools {
                 let value = inputBox.value;
                 let tailLen = value.length - cursorPos;
 
-                let args = value.match(/(".*?"|[^"\s]+)+(?=\s*|\s*$)/g)
+                let args = value.match(/(".*?"|[^"\s]+)+(?=\s*|\s*$)/g);
 
                 let setArgs = {"args": []};
                 let possibleArgs = ["/figlet", 1];
@@ -138,7 +135,7 @@ class FloofTools {
 
 
                     if (setArgs["/figlet"]) {
-                        value = "```"+this.execSync("figlet "+setArgs["/figlet"], {encoding: 'utf-8'})+"```";
+                        value = "`"+this.execSync("figlet "+setArgs["/figlet"], {encoding: 'utf-8'})+"`";
                     }
 
                     inputBox.focus();
